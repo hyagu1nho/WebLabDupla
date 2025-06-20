@@ -6,33 +6,57 @@
   <title>Sobre o Projeto</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <aside class="sidebar">
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="formulario.html">Contato</a></li>
-      </ul>
-    </nav>
-  </aside>
+  <nav>
+    <ul>
+      <li><a href="index.html"><span class="material-icons">home</span><span class="texto-link">Início</span></a></li>
+      <li><a href="sobre.html"><span class="material-icons">info</span><span class="texto-link">Sobre</span></a></li>
+      <li><a href="formulario.html"><span class="material-icons">mail</span><span class="texto-link">Contato</span></a></li>
+    </ul>
+  </nav>
+</aside>
+
   <main>
     <header>
       <h1>Sobre o Projeto</h1>
-    </header>
-    <section>
-      <p>Este site foi desenvolvido como parte do projeto de curricularização da disciplina Desenvolvimento para Web da UPF.</p>
-      <h2>Integrantes</h2>
-      <div>
-        <img src="img/integrante1.jpg" alt="Integrante 1" width="150">
-        <p>Nome do Integrante 1</p>
-        <img src="img/integrante2.jpg" alt="Integrante 2" width="150">
-        <p>Nome do Integrante 2</p>
-        <img src="img/integrante3.jpg" alt="Integrante 3" width="150">
-        <p>Nome do Integrante 3</p>
+      <div class="top-buttons">
+        <button id="theme-toggle"><span class="material-icons">dark_mode</span></button>
       </div>
-    </section>
+    </header>
+<section>
+  <p>Este site foi desenvolvido como parte do projeto de curricularização da disciplina Desenvolvimento para Web da UPF. O objetivo é promover boas práticas de segurança da informação através de um site educativo e interativo.</p>
+
+  <h2>Integrantes</h2>
+  <div class="integrantes">
+
+    <div class="integrante">
+      <img src="img/integrante1.jpg" alt="Foto Integrante 1">
+      <p>Nome do Integrante 1</p>
+      <p class="descricao">Estudante de Ciência da Computação com foco em desenvolvimento web e segurança da informação.</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><span class="material-icons">link</span></a>
+        <a href="#" target="_blank"><span class="material-icons">code</span></a>
+        <a href="#" target="_blank"><span class="material-icons">camera_alt</span></a>
+      </div>
+    </div>
+
+    <div class="integrante">
+      <img src="img/integrante2.jpg" alt="Foto Integrante 2">
+      <p>Nome do Integrante 2</p>
+      <p class="descricao">Apaixonado por tecnologia, com interesse em front-end e boas práticas de segurança digital.</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><span class="material-icons">link</span></a>
+        <a href="#" target="_blank"><span class="material-icons">code</span></a>
+        <a href="#" target="_blank"><span class="material-icons">camera_alt</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
   </main>
 </body>
 </html>

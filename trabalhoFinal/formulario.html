@@ -6,26 +6,32 @@
   <title>Formulário de Contato</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script>
     function enviarFormulario(event) {
       event.preventDefault();
       alert("Página em construção");
     }
   </script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <aside class="sidebar">
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="formulario.html">Contato</a></li>
-      </ul>
-    </nav>
-  </aside>
+  <nav>
+    <ul>
+      <li><a href="index.html"><span class="material-icons">home</span><span class="texto-link">Início</span></a></li>
+      <li><a href="sobre.html"><span class="material-icons">info</span><span class="texto-link">Sobre</span></a></li>
+      <li><a href="formulario.html"><span class="material-icons">mail</span><span class="texto-link">Contato</span></a></li>
+  </nav>
+</aside>
+
   <main>
     <header>
       <h1>Contato</h1>
+      <div class="top-buttons">
+        <button id="theme-toggle"><span class="material-icons">dark_mode</span></button>
+        <button id="accessibility"><span class="material-icons">accessibility</span></button>
+      </div>
     </header>
     <section>
       <form onsubmit="enviarFormulario(event)">
