@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     color: #333;
 }
 
+/* BARRA LATERAL */
 .sidebar {
     position: fixed;
     top: 0;
@@ -48,7 +50,7 @@ body {
     background-color: #444;
 }
 
-.sidebar nav ul li a .material-icons {
+.sidebar nav ul li a i {
     min-width: 24px;
     text-align: center;
     margin-right: 10px;
@@ -64,6 +66,7 @@ body {
     opacity: 1;
 }
 
+/* MAIN */
 main {
     margin-left: 60px;
     padding: 20px;
@@ -108,7 +111,7 @@ header h1 {
     line-height: 1.6;
 }
 
-/* ===== DARK MODE ===== */
+/* DARK MODE */
 body.dark-mode {
     background-color: #121212;
     color: #f5f5f5;
@@ -146,7 +149,7 @@ body.accessible {
     font-size: 1.2em;
 }
 
-/* ===== FORMULÁRIO DE CONTATO ===== */
+/* CONTATO */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -237,7 +240,7 @@ body.dark-mode form button[type="submit"]:hover {
     background-color: #666;
 }
 
-/* ===== ESTILO PARA PÁGINA SOBRE ===== */
+/* SOBRE */
 section {
     max-width: 900px;
     margin: 0 auto;
@@ -295,15 +298,34 @@ section h2 {
 
 .integrante .social-links a {
     display: inline-block;
-    margin: 0 5px;
-    color: #6c63ff;
-    font-size: 20px;
+    margin: 0 10px;
+    font-size: 24px;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.integrante .social-links a:hover {
-    color: #574fd6;
+.integrante .social-links a.github {
+    color: #333;
+}
+
+.integrante .social-links a.linkedin {
+    color: #0e76a8;
+}
+
+.integrante .social-links a.instagram {
+    color: #e1306c;
+}
+
+.integrante .social-links a.github:hover {
+    color: #000;
+}
+
+.integrante .social-links a.linkedin:hover {
+    color: #0077b5;
+}
+
+.integrante .social-links a.instagram:hover {
+    color: #c13584;
 }
 
 body.dark-mode .integrante {
@@ -319,10 +341,6 @@ body.dark-mode .integrante .descricao {
     color: #ccc;
 }
 
-body.dark-mode .integrante .social-links a {
+body.dark-mode .integrante .social-links a.github {
     color: #bbb;
-}
-
-body.dark-mode .integrante .social-links a:hover {
-    color: #fff;
 }
