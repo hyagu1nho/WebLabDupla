@@ -6,27 +6,39 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titulo {
+    height: 120px;
+    width: auto;
+    background-color:hsl(258, 91%, 8%);
+}
+
+.titulo img {
+    width: 180px;
+    margin-left: 300px;
 }
 
 /* BARRA LATERAL */
 .sidebar {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 48px;
-    background-color: #0e0229;
+    width: 90px;
+    background-color: hsl(258, 91%, 8%);
     overflow-x: hidden;
     transition: width 0.7s;
-    padding-top: 20px;
+    padding-top: 200px;
     z-index: 1000;
 }
 
 .sidebar:hover {
-    width: 220px;
+    width: 300px;
 }
 
 .sidebar nav ul {
@@ -41,6 +53,9 @@ body {
     padding: 12px 10px;
     text-decoration: none;
     white-space: nowrap;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     transition: background-color 0.2s, padding 0.3s;
@@ -57,6 +72,14 @@ body {
     transition: margin-right 0.3s;
 }
 
+.sidebar nav ul li a span.material-icons {
+    font-size: 25px;
+}
+
+.sidebar:hover nav ul li a span.material-icons {
+    font-size: 25px;
+}
+
 .sidebar nav ul li a span.texto-link {
     opacity: 0;
     transition: opacity 0.3s;
@@ -68,13 +91,13 @@ body {
 
 /* MAIN */
 main {
-    margin-left: 60px;
+    margin-left: 160px;
     padding: 20px;
     transition: margin-left 0.7s;
 }
 
 .sidebar:hover ~ main {
-    margin-left: 220px;
+    margin-left: 300px;
 }
 
 header {
@@ -113,8 +136,12 @@ header h1 {
 
 /* DARK MODE */
 body.dark-mode {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #f5f5f5;
+}
+
+body.dark-mode .titulo {
+    background-color: #0e0229;
 }
 
 body.dark-mode header {
@@ -160,6 +187,7 @@ form {
 }
 
 form label {
+    font-family: "Montserrat", sans-serif;
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
@@ -169,6 +197,7 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form textarea {
+    font-family: "Montserrat", sans-serif;
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -208,7 +237,7 @@ form button[type="submit"]:hover {
 }
 
 body.dark-mode form {
-    background-color: #1e1e1e;
+    background-color: #161616;
     color: white;
 }
 
@@ -264,7 +293,7 @@ section h2 {
 
 .integrante {
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 35px;
     text-align: center;
@@ -288,12 +317,14 @@ section h2 {
 .integrante p {
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
-.integrante .descricao {
+.descricao {
     font-size: 14px;
     color: #555;
     margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .integrante .social-links a {
@@ -329,7 +360,7 @@ section h2 {
 }
 
 body.dark-mode .integrante {
-    background-color: #1e1e1e;
+    background-color: #161616;
     color: #f5f5f5;
 }
 
@@ -343,4 +374,40 @@ body.dark-mode .integrante .descricao {
 
 body.dark-mode .integrante .social-links a.github {
     color: #bbb;
+}
+
+/*Páginas Cartilhas*/
+
+.cartilha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px;;
+}
+
+.cartilhas {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-right: 90px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.cartilhas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .cartilha {
+    background-color: #161616;
+    color: #f5f5f5;
+}
+
+body.dark-mode .cartilhas {
+    background-color: #161616;
+    color: #f5f5f5;
 }
